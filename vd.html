@@ -8,14 +8,14 @@
 <body>
         <div id = "pos">
         <br /><br /><br /><br /><br /><br /><br />
-        <h2 style="text-align: center; font-size: 30px;">Scan this QR Code every time you see it,<br /> and you'll find something new</h2><br />
-        <h1 style="text-align: center; font-size: 30px;"><a href='javascript: pop()'>Here is the link for you, enjoy ：）</a></h1>
+        <h2 style="text-align: center; font-size: 2.5em;">Scan this QR Code every time you see it,<br /> and you'll find something new</h2><br />
+        <h2 style="text-align: center; color: #0000EE; font-size: 2.5em;"><a href='javascript: pop()'>Here is the link for you, enjoy ：）</a></h2>
         </div>
         <script>
         function pop()
         {
         document.querySelector('title').innerHTML = 'We Gotcha ：）';
-        document.getElementById("pos").innerHTML = '<video id="vd" width="100%" height="auto controls="0" controlsList="nodownload" autoplay><source src="vd.mp4" type="video/mp4"><track label="中文" kind="subtitles" srclang="zh_TW" src="vd.vtt" default></video>';
+        document.getElementById("pos").innerHTML = '<video id="vd" width="100%" height="auto" controlsList="nodownload" autoplay><source src="vd.mp4" type="video/mp4"><track label="中文" kind="subtitles" srclang="zh_TW" src="vd.vtt" default></video>';
         }
         </script>
 </body>
