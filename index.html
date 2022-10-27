@@ -4,17 +4,32 @@
         <meta charset="utf-8">
         <title>redirecting...</title>
         <script type="text/javascript">
+                var sec = 3;
+                var urls = ['vd.html'];
+                var pos = Math.floor( Math.random() * urls.length );
+                var interval;
                 function prepare()
                 {
-                        var urls = ['vd.html'];
-                        var pos = Math.floor( Math.random() * urls.length );
-                        var timeout = setTimeout(function(){window.location.replace(urls[pos]);}, 3000);
+                        interval = setInterval(countdown, 1000);
+                }
+                function countdown()
+                {
+                        if(sec == 0)
+                        {
+                                clearInterval(interval);
+                                window.location.replace(urls[pos]);
+                        }
+                        else
+                        {
+                                --sec;
+                                document.getElementById("sec").innerHTML = sec;
+                        }
                 }
         </script>
 </head>
 <body onload="prepare()">
         <br /><br /><br /><br /><br /><br /><br />
-        <h2 style="text-align: center;">Scan this QRcode every time you see it, and you'll find something new here</h2>
-        <h2 style="text-align: center;">The process starts in 3 seconds</h2>
+        <h2 style="text-align: center;">Scan this QRcode every time you see it,<br /> and you'll find something new.</h2>
+        <h2 style="text-align: center;">The process starts in <span id="sec">3</span> seconds</h2>
 </body>
 </html>
