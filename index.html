@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>redirecting...</title>
         <script type="text/javascript">
-                var sec = 3;
+                var sec = 5;
                 var urls = ['vd.html'];
                 var pos = Math.floor( Math.random() * urls.length );
                 var interval;
@@ -17,7 +17,7 @@
                         if(sec == 0)
                         {
                                 clearInterval(interval);
-                                window.location.replace(urls[pos]);
+                                window.location.href = urls[pos];
                         }
                         else
                         {
@@ -29,7 +29,7 @@
 </head>
 <body onload="prepare()">
         <br /><br /><br /><br /><br /><br /><br />
-        <h2 style="text-align: center;">Scan this QRcode every time you see it,<br /> and you'll find something new.</h2>
-        <h2 style="text-align: center;">The process starts in <span id="sec">3</span> seconds</h2>
+        <h2 style="text-align: center; font-size: 30px;">Scan this QR Code every time you see it,<br /> and you'll find something new</h2><br />
+        <h2 style="text-align: center; color: #0000EE; font-size: 30px;">Your link will be generated in <span id="sec">5</span> seconds</h2>
 </body>
 </html>

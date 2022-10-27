@@ -2,11 +2,21 @@
 <html>
 <head>
         <meta charset="utf-8">
-        <title>gotcha</title>
+        <title>redirecting...</title>
+
 </head>
-<body onload="window.location.href = 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1'">
-        <div style="height: 95vh;">
-                <iframe width="100%" height="100%" src="" frameborder="0"></iframe>
+<body>
+        <div id = "pos">
+        <br /><br /><br /><br /><br /><br /><br />
+        <h2 style="text-align: center; font-size: 30px;">Scan this QR Code every time you see it,<br /> and you'll find something new</h2><br />
+        <h1 style="text-align: center; font-size: 30px;"><a href='javascript: pop()'>Here is the link for you, enjoy ：）</a></h1>
         </div>
+        <script>
+        function pop()
+        {
+        document.querySelector('title').innerHTML = 'We Gotcha ：）';
+        document.getElementById("pos").innerHTML = '<video id="vd" width="100%" height="auto controls="0" controlsList="nodownload" autoplay><source src="vd.mp4" type="video/mp4"><track label="中文" kind="subtitles" srclang="zh_TW" src="vd.vtt" default></video>';
+        }
+        </script>
 </body>
 </html>
