@@ -7,14 +7,14 @@
 		function prepare()
 		{
 			var urls = ['https://www.youtube.com/watch?v=dQw4w9WgXcQ'];
-			var pos = Math.random() * urls.length;
+			var pos = Math.floor( Math.random() * urls.length );
 			var timeout = setTimeout(function(){window.location.replace(urls[pos]);}, 3000);
 		}
 	</script>
 </head>
 <body onload="prepare()">
 	<br /><br /><br /><br /><br /><br /><br />
-	<h2 style="text-align: center;">Scan this QRcode every time you see it, and you'll find something new</h2>
+	<h2 style="text-align: center;">Scan this QRcode every time you see it, and you'll find something new here</h2>
 	<h2 style="text-align: center;">The process starts in 3 seconds</h2>
 </body>
 </html>
